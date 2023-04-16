@@ -12,7 +12,9 @@ The NurseAI Chatbot is a conversational interface designed to assist users in id
 
 **Follow-up conversation:** The chatbot has the abilities to follow up with the conversation history.
 
-**Summarzie:** In case users lose track of what they have to do, NurseAI can help them summarize the conversation. 
+**Summarzie:** In case users lose track of what they have to do, NurseAI can help them summarize the conversation.
+
+**Multiple languagle:** Since our chatbot is using GPT model, it can support multiple languages
 
 ## Technologies
 
