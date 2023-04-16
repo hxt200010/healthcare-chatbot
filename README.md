@@ -1,5 +1,35 @@
-# COVID-19-Chatbot
-A COVID 19 Chatbot for React apps. [Live Demo](https://9cluu.csb.app/)
+NurseAI Chatbot
+The NurseAI Chatbot is a conversational interface designed to assist users in identifying their health symptoms and predicting potential treatments. The chatbot uses natural language processing (NLP) to understand user input and provide appropriate responses. This version of the NurseAI Chatbot is built using React and powered by RespellAI and the ChatGPT model.
 
-![COVID-19-ChatBot](https://user-images.githubusercontent.com/45126869/132464863-87b10d49-449e-4be8-8756-f2fc19f28a44.gif)
+Features
+Symptom collection: Users can describe their health symptoms to the chatbot, which uses NLP to understand and collect relevant information.
+Treatment prediction: Based on the symptoms reported by the user, the chatbot predicts potential treatments and provides information about them.
+Personalized recommendations: The chatbot can also provide personalized recommendations based on the user's health history and other relevant information.
+Spell checking: The chatbot uses RespellAI to correct any spelling errors made by the user.
+Natural language processing: The chatbot uses the ChatGPT model to understand user input and generate appropriate responses.
+Technologies
+The NurseAI Chatbot is built using a combination of technologies, including:
 
+React: The chatbot is built using React, a popular JavaScript library for building user interfaces.
+RespellAI: The chatbot uses RespellAI to correct any spelling errors made by the user. RespellAI is a cloud-based spelling correction API powered by machine learning.
+ChatGPT: The chatbot uses the ChatGPT model to understand user input and generate appropriate responses. ChatGPT is a natural language processing model developed by OpenAI.
+Installation
+To run the NurseAI Chatbot, you'll need to have Node.js and npm installed on your system. You can install the necessary dependencies by running the following command in your terminal:
+
+Copy code
+npm install
+Once you have installed the necessary dependencies, you can start the chatbot by running the following command:
+
+sql
+Copy code
+npm start
+This will start a local web server on port 3000. You can access the chatbot by opening a web browser and navigating to http://localhost:3000.
+
+Usage
+To use the NurseAI Chatbot, simply type your symptoms into the chat window and hit "Enter". The chatbot will use RespellAI to correct any spelling errors you may have made, and then use the ChatGPT model to understand your input and provide appropriate responses. If necessary, the chatbot may ask you for additional information in order to make a more accurate prediction.
+
+Contributing
+We welcome contributions to the NurseAI Chatbot project! If you would like to contribute code, please fork the repository and submit a pull request. If you have suggestions for new features or improvements, please open an issue on the GitHub repository.
+
+License
+The NurseAI Chatbot is released under the MIT License. See the LICENSE file for details.
