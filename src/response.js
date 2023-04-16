@@ -1,6 +1,6 @@
 export const getAIResponse = async (messages) => {
     const response = await fetchAIResponse(messages);
-    return response.text;
+    return response.outputs.text_output;
   };
   
   const fetchAIResponse = async (messages) => {
