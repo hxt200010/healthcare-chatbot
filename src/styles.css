@@ -114,11 +114,13 @@
   z-index: 9999;
   box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4);
   border-radius: 5px;
+  width: 500px;
 }
 .app-chatbot-button-icon {
   fill: #fff;
 }
 
-.react-chatbot-kit-chat-container {
+/* this is the right class but not work? */
+/* .react-chatbot-kit-chat-container {
   width: 500px;
-}
+} */
