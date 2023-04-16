@@ -1,4 +1,4 @@
-import {createFileAndAppend} from "./file"
+//import {createFileAndAppend} from "./file"
 
 class MessageParser {
   constructor(actionProvider, state) {
@@ -9,7 +9,7 @@ class MessageParser {
   parse(message) {
     console.log(message);
     //open history file and write user message
-    createFileAndAppend("chat_log.txt",message + "\n");
+    //createFileAndAppend("chat_log.txt",message + "\n");
     return this.actionProvider.handleUserMessage(message);
   }
 }

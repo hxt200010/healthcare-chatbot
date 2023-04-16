@@ -1,8 +1,6 @@
 export const getAIResponse = async (messages) => {
     const response = await fetchAIResponse(messages);
-    result = response.outputs.text_output
-    createFileAndAppend("chat_log.txt",result + "\n");
-    return result;
+    return response.outputs.text_output;
   };
   
   const fetchAIResponse = async (messages) => {

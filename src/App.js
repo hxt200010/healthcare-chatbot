@@ -8,16 +8,9 @@ import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
 import TypedReact from "./TypedReact";
-import {clearFileContent} from "./file"
+//import {clearFileContent} from "./file"
 export default function App() {
-  const [showBot, setBotActive] = useState(false);
-  
-
-  const toggleBot = (prev) => {
-    setBotActive(!prev);
-    //clear content of file'
-    clearFileContent("chat_log.txt");
-  };
+  const [showBot, toggleBot] = useState(false);
 
   return (
     <div className="App">
@@ -44,7 +37,7 @@ export default function App() {
       <Flip left cascade>
         <button
           className="app-chatbot-button"
-          onClick={() => toggleBot((prev) => !prev)}
+          onClick={() => {toggleBot((prev) => !prev)}}
         >
           <div>Bot</div>
           <svg viewBox="0 0 640 512" className="app-chatbot-button-icon">
