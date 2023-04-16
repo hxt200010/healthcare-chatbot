@@ -1,6 +1,6 @@
 import React from "react";
 
-import BotAvatar from "./icons/bot.svg";
+import BotAvatar from "./icons/chatbot-icon.svg";
 
 const CoBotAvatar = () => {
   return (

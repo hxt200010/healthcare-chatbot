@@ -20,8 +20,8 @@ export default function App() {
         <meta name="description" content="COVID 19 assistance chatbot." />
       </MetaTags>
       <Fade bottom cascade>
-        <h1>COVID-19-Chatbot</h1>
-        <h2>Start chatting with the COVID-19-Chatbot!</h2>
+        <h1>Welcome to NurseAI Healthcare Agent</h1>
+        <h2>Click on the Bot icon at the bottom left button to begin!</h2>
       </Fade>
       <TypedReact />
       {showBot && (

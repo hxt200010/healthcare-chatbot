@@ -12,12 +12,15 @@ const TypedReact = () => {
       const options = {
         showCursor: true,
         strings: [
-          "Click on the Bot icon to get started",
-          "Type in tell a joke and see what happens..."
+          "Our intelligent chatbot is designed to provide you with accurate and up-to-date information on a wide range of health topics, from common symptoms and treatments to tips for staying healthy and active.",
+          "Whether you're looking for personalized advice or just need someone to talk to, NurseAI is here to help.",
+          "Simply type in your question or concern and let our chatbot guide you to the information you need.",
+          "Thank you for choosing NurseAI as your trusted healthcare companion."
         ],
         typeSpeed: 50,
-        backSpeed: 50,
-        backDelay: 2000
+        backSpeed: 0,
+        backDelay: 4000,
+        loop: true
       };
 
       // elRef refers to the <span> rendered below
