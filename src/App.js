@@ -8,16 +8,17 @@ import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
 import TypedReact from "./TypedReact";
-
+import {clearFileContent} from "./file"
 export default function App() {
-  const [showBot, toggleBot] = useState(false);
-  const [messages, setMessages] = useState([]);
-
-  const handleOnMessageParsed = (message) => {
-    console.log(`Received message "${message}"`);
-    setMessages(messages => [...messages, { message }]);
-  };
+  const [showBot, setBotActive] = useState(false);
   
+
+  const toggleBot = (prev) => {
+    setBotActive(!prev);
+    //clear content of file'
+    clearFileContent("chat_log.txt");
+  };
+
   return (
     <div className="App">
       <MetaTags>
@@ -34,7 +35,7 @@ export default function App() {
           <div className="app-chatbot-container">
             <Chatbot
               config={config}
-              messageParser={new MessageParser(ActionProvider, state, handleOnMessageParsed)}
+              messageParser={MessageParser}
               actionProvider={ActionProvider}
             />
           </div>
