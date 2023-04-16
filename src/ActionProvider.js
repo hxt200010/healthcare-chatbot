@@ -1,4 +1,5 @@
 import { getAIResponse } from "./response";
+import {saveToLocalStorage} from "./localStorage"
 
 class ActionProvider {
   constructor(createChatBotMessage, setStateFunc, createClientMessage) {
@@ -10,6 +11,8 @@ class ActionProvider {
   handleUserMessage(message) {
     // Call the getChatResponse function and handle the promise
     getAIResponse(message).then((response) => {
+      // Save response to localStorage
+      saveToLocalStorage(response)
       // Use the response to create a new bot message
       const botMessage = this.createChatBotMessage(response);
 

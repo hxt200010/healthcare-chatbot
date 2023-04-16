@@ -8,6 +8,7 @@ import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
 import TypedReact from "./TypedReact";
+import { clearHistoryFromLocalStorage } from "./localStorage";
 //import {clearFileContent} from "./file"
 export default function App() {
   const [showBot, toggleBot] = useState(false);
@@ -37,7 +38,11 @@ export default function App() {
       <Flip left cascade>
         <button
           className="app-chatbot-button"
-          onClick={() => {toggleBot((prev) => !prev)}}
+          onClick={() => {
+            toggleBot((prev) => !prev)
+            if (!showBot)
+              clearHistoryFromLocalStorage()
+          }}
         >
           <div>Bot</div>
           <svg viewBox="0 0 640 512" className="app-chatbot-button-icon">
