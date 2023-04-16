@@ -16,8 +16,8 @@ export default function App() {
   return (
     <div className="App">
       <MetaTags>
-        <title> COVID-19-Chatbot </title>
-        <meta name="description" content="COVID 19 assistance chatbot." />
+        <title> Nurse-AI </title>
+        <meta name="description" content="NurseAI - Healthcare assassitant." />
       </MetaTags>
       <Fade bottom cascade>
         <h1>Welcome to NurseAI Healthcare Agent</h1>
