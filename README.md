@@ -10,6 +10,10 @@ The NurseAI Chatbot is a conversational interface designed to assist users in id
 
 **Personalized recommendations:** The chatbot can also provide personalized recommendations based on the user's health history and other relevant information.
 
+**Follow-up conversation:** The chatbot has the abilities to follow up with the conversation history.
+
+**Summarzie:** In case users lose track of what they have to do, NurseAI can help them summarize the conversation. 
+
 ## Technologies
 
 The NurseAI Chatbot is built using a combination of technologies, including:
