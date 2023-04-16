@@ -11,7 +11,13 @@ import TypedReact from "./TypedReact";
 
 export default function App() {
   const [showBot, toggleBot] = useState(false);
+  const [messages, setMessages] = useState([]);
 
+  const handleOnMessageParsed = (message) => {
+    console.log(`Received message "${message}"`);
+    setMessages(messages => [...messages, { message }]);
+  };
+  
   return (
     <div className="App">
       <MetaTags>
@@ -28,7 +34,7 @@ export default function App() {
           <div className="app-chatbot-container">
             <Chatbot
               config={config}
-              messageParser={MessageParser}
+              messageParser={new MessageParser(ActionProvider, state, handleOnMessageParsed)}
               actionProvider={ActionProvider}
             />
           </div>

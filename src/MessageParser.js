@@ -2,11 +2,14 @@ class MessageParser {
   constructor(actionProvider, state) {
     this.actionProvider = actionProvider;
     this.state = state;
+    this.onMessageParsed = onMessageParsed;
   }
 
   parse(message) {
-    //message = message.toLowerCase();
     console.log(message);
+    if (this.onMessageParsed) {
+      this.onMessageParsed(message);
+    }
     return this.actionProvider.handleUserMessage(message);
   }
 }
