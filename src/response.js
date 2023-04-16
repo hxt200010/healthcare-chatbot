@@ -15,7 +15,7 @@ export const getAIResponse = async (messages) => {
       body: JSON.stringify({
         spellId: 'aIg_DkelOI2izBtAELyQF',
         // This field can be omitted to run the latest published version
-        spellVersionId: 'HSepKcF_-4O0KQD0yplQg',
+        spellVersionId: '3o8dVhMLvggZVKFt8JOUk',
         // Fill in dynamic values for each of your 2 input blocks
         inputs: {
           user: messages,

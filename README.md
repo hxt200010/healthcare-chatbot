@@ -1,6 +1,6 @@
 # NurseAI Chatbot
 
-The NurseAI Chatbot is a conversational interface designed to assist users in identifying their health symptoms and predicting potential treatments. The chatbot uses natural language processing (NLP) to understand user input and provide appropriate responses. This version of the NurseAI Chatbot is built using React and powered by RespellAI and ChatGPT model.
+The NurseAI Chatbot is a conversational interface designed to assist users in identifying their health symptoms and predicting potential treatments. The chatbot uses natural language processing (NLP) to understand user input and provide appropriate responses. This version of the NurseAI Chatbot is built using React and powered by RespellAI and GPT-3 model.
 
 ## Features
 
@@ -47,6 +47,24 @@ To use the NurseAI Chatbot, simply type your symptoms into the chat window and h
 ## Live Demo
 
 Demo URL: https://3kc7nr-3000.csb.app/
+
+## Use Cases
+
+**1.Symptom Checker:** Users can input their symptoms, and the chatbot can help identify potential health issues based on the symptoms. 
+
+**2.Health and Wellness Information:** The chatbot can provide general health and wellness information, including diet and exercise tips, based on user preferences. 
+
+**3.Telemedicine Support:** The chatbot can assist doctors and nurses by providing basic medical information, triaging patients, and offering remote consultation.
+
+**4.Mental Health Support:** The chatbot can help identify potential mental health issues and provide basic support, such as self-care techniques or referrals to mental health professionals.
+
+## Future implementation plan
+
+**1.Improve User Experience:** Continuously improve the user interface of the chatbot to make it more intuitive and user-friendly.
+
+**2.Personalization: Implement:** Personalization features that allow users to customize their experience, based on their preferences and medical history.
+
+**3.Upgrade to GPT-4:** Upgrade chat model to OpenAI's GPT-4 to allow users to give audio and image inputs.
 
 ## Contributing
 
