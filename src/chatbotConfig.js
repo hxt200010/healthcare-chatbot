@@ -3,7 +3,7 @@ import CoBotAvatar from "./CoBotAvatar";
 
 const config = {
   lang: "no",
-  botName: "CoBot",
+  botName: "NurseAI",
   customStyles: {
     botMessageBox: {
       backgroundColor: "#04668a"
